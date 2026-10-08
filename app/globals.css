@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Design tokens from DESIGN.md: navy and white, sentence case, left-aligned, 4px / 8px radii */
+@theme {
+  --color-navy-950: #0a1128;
+  --color-navy-900: #0b1f4b;
+  --color-navy-800: #0f1b3e;
+  --color-navy-700: #1e3a8a;
+  --color-blue-500: #3b6ef5;
+  --color-blue-100: #e6edfb;
+  --color-slate-600: #475569;
+  --font-heading: var(--font-archivo), "Arial Narrow", Arial, sans-serif;
+  --font-body: var(--font-public), system-ui, sans-serif;
+}
+
+/* Page container: 1280px max, 16px margins on mobile, 24px tablet, 32px desktop */
+@utility wrap {
+  margin-inline: auto;
+  width: 100%;
+  max-width: 80rem;
+  padding-inline: 1rem;
+  @media (min-width: 768px) { padding-inline: 1.5rem; }
+  @media (min-width: 1024px) { padding-inline: 2rem; }
+}
+
+@layer base {
+  body { background: #fff; color: var(--color-slate-600); font-family: var(--font-body); line-height: 1.6; text-align: left; }
+  h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--color-navy-900); letter-spacing: -0.015em; line-height: 1.15; font-weight: 700; }
+  :focus-visible { outline: 2px solid var(--color-blue-500); outline-offset: 2px; }
+  ::selection { background: var(--color-blue-500); color: #fff; }
+}
+
+/* Blueprint grid used as the hero background and as the no-WebGL fallback */
+.blueprint {
+  background-color: var(--color-navy-950);
+  background-image:
+    linear-gradient(rgba(59, 110, 245, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 110, 245, 0.12) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* Lenis smooth-scroll recommended CSS */
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
