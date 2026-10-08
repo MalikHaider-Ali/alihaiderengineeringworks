@@ -15,7 +15,7 @@ export const services = [
 ];
 
 export const sectors = ["Hotels", "Private and public hospitals", "Schools and universities", "Sports and fitness centers",
-  "Commercial and retail complexes", "Showrooms", "Social housing", "Bars and nightclubs"];
+  "Commercial and retail complexes", "Showrooms", "Social housing", "Industrial and manufacturing facilities", "Government and municipal buildings", "Residential complexes", "High-rise buildings", "Warehouses and storage facilities"];
 
 export const categories = ["All", "Substation", "Cabling", "Panels", "Transmission", "Lighting"] as const;
 
