@@ -25,13 +25,13 @@ export default function Home() {
         <HeroScene />
         <div className="wrap relative py-20 md:py-32">
           <Reveal><Badge>Contractor, Manufacturers & General Order Supplier</Badge></Reveal>
-          <Reveal><Badge>Repairing & Maintenance of Electrical and Mechanical Systems</Badge></Reveal>
           <Reveal delay={0.1}>
             <h1 className="mt-6 max-w-3xl text-4xl !text-white md:text-6xl">Turnkey electrical infrastructure and integrated security engineering</h1>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-xl text-lg text-blue-100/80">
               From 132 kV substation work to CCTV and access control, we design, install, test and maintain systems for hotels, hospitals, schools and commercial buildings.
+              Repairing & Maintenance of Electrical and Mechanical Systems.
             </p>
           </Reveal>
           <Reveal delay={0.3} className="mt-8 flex flex-wrap gap-3">
