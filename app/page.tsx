@@ -30,8 +30,8 @@ export default function Home() {
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-6 max-w-xl text-lg text-blue-100/80">
-              From 132 kV substation work to CCTV and access control, we design, install, test and maintain systems for hotels, hospitals, schools and commercial buildings.
               Repairing & Maintenance of Electrical and Mechanical Systems.
+              From 132 kV substation work to CCTV and access control, we design, install, test and maintain systems for hotels, hospitals, schools and commercial buildings.
             </p>
           </Reveal>
           <Reveal delay={0.3} className="mt-8 flex flex-wrap gap-3">
