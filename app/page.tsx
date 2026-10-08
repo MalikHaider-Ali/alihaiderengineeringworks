@@ -24,7 +24,8 @@ export default function Home() {
       <section className="relative overflow-hidden text-white">
         <HeroScene />
         <div className="wrap relative py-20 md:py-32">
-          <Reveal><Badge>Electrical and security contractors, Rawalpindi</Badge></Reveal>
+          <Reveal><Badge>Contractor, Manufacturers & General Order Supplier</Badge></Reveal>
+          <Reveal><Badge>Repairing & Maintenance of Electrical and Mechanical Systems</Badge></Reveal>
           <Reveal delay={0.1}>
             <h1 className="mt-6 max-w-3xl text-4xl !text-white md:text-6xl">Turnkey electrical infrastructure and integrated security engineering</h1>
           </Reveal>
