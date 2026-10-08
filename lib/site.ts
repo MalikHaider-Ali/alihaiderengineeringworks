@@ -1,7 +1,7 @@
 // Single source of truth for contact details. Verified against the company profile.
 export const site = {
   name: "Ali Haider Engineering Works",
-  phone: "+92-51-5680469",
+  phone: "+92 322 3222326",
   phoneHref: "tel:+923223222326",
   mobile: "+92 322 3222326",
   whatsappHref: "https://wa.me/923223222326",

@@ -54,9 +54,11 @@ export default function Navbar() {
 
           {/* Call and quote buttons: desktop only. On mobile they live inside the menu. */}
           <div className="flex shrink-0 items-center gap-2">
-            <ButtonLink href={site.phoneHref} variant="secondary" className="hidden xl:inline-flex">Call us</ButtonLink>
-            <ButtonLink href="/contact" className="hidden lg:inline-flex">Request a quote</ButtonLink>
-            <button ref={toggleRef} type="button" aria-expanded={open} aria-controls="mobile-menu"
+            <div className="hidden items-center gap-2 lg:flex">
+                <ButtonLink href={site.phoneHref} variant="secondary">Call us</ButtonLink>
+                <ButtonLink href="/contact">Request a quote</ButtonLink>
+            </div>
+              <button ref={toggleRef} type="button" aria-expanded={open} aria-controls="mobile-menu"
               aria-label={open ? "Close menu" : "Open menu"} onClick={() => setOpen(!open)}
               className="grid size-11 place-items-center rounded border border-blue-100 text-navy-900 lg:hidden">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
